@@ -1,0 +1,216 @@
+/*共通のスタイル*/
+
+html {
+  font-size: 62.5%;
+  /*デフォルトが16pxなので10px標準とする*/
+  height: 100%;
+  font-family: 'Handlee', cursive;
+}
+
+body {
+  height: 100%;
+  background: #A1FFCE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.hidden{
+    display: none;
+}
+
+/*containerのスタイル*/
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    width: 980px;
+}
+
+/*ヘッダーのスタイル*/
+.header{
+    height: 80px;
+    background-color: #333;
+    position: relative;
+}
+
+.header .title{
+    font-family: 'Handlee', cursive;
+    color: #fff;
+    font-size: 4.5rem;
+}
+
+.header a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-decoration: none;
+    outline: none;
+    display: block;
+    height: 60px;
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*ナビゲーターのスタイル*/
+.nav{
+    background-color: #333;
+    height: 30px;
+    border-top: 1px solid #fff;
+}
+
+.menu li{
+    float: left;
+    width: 23px;
+    margin-left: 100px;
+    font-size: 1.5rem;
+}
+
+.menu li:first-child{
+    float: left;
+    width: 23px;
+    margin-left: 350px;
+}
+
+.menu li:last-child{
+    float: left;
+    width: 23px;
+    margin-right: 20px;
+}
+
+.nav a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+}
+
+/*TOPイメージのスタイル*/
+.top_image{
+    width: 100%;
+    height: 400px;
+    margin-top: 5px;
+}
+
+/*ラッパーのスタイル*/
+.wrapper{
+    margin-top: 10px;
+    padding-bottom: 100px;
+}
+
+/*記事のスタイル*/
+
+/*記事共通のスタイル*/
+.content{
+    float: left;
+    width: 680px;
+    margin-left: 20px;
+    font-size: 1.7rem;
+}
+
+.content_title{
+    font-size: 4rem;
+    margin-bottom: 0px;
+    background-color: #f8f8f8;
+    vertical-align: middle;
+    height: 50px;
+    padding: 10px 0 0 10px;
+}
+
+.content li{
+    margin: 30px 10px;
+    font-size: 2rem;
+}
+
+.messagebox{
+    padding: 0 55px;
+    line-height: 160%;
+}
+
+.imgbox{
+    text-align: center;
+    margin: 40px 0 70px 0;
+}
+
+/*Aboutのスタイル*/
+
+.about_img{
+    width: 250px;
+}
+
+/*Skillのスタイル*/
+
+.skill_img{
+    width: 200px;
+}
+
+/*Storyのスタイル*/
+
+.story_heading{
+    padding-left: 30px;
+    font-size: 2.4rem;
+}
+
+.story1_img{
+    width: 100px;
+}
+
+.story2_img{
+    width: 200px;
+}
+
+.messagebox_story{
+    text-align: center;
+}
+
+/*サイドバーのスタイル*/
+.sidebar{
+    float: right;
+    width: 200px;
+    font-size: 1.5rem;
+    padding-top: 40px;
+    font-family: Helvetica;
+}
+
+.sidebar li{
+    margin-bottom: 40px;
+    width: 45px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #333;
+}
+
+.sidebar a{
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+}
+
+
+/*フッターのスタイル*/
+
+.footer{
+    height: 30px;
+    color: #333;
+    text-align: center;
+    border-top: 0.1px solid #f2f2f2;
+}
