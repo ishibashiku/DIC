@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="./css/normalize_v7.0.css">
+        <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/css_exam02.css">
         <title>Ishibashi's Portfolio</title>
         <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
@@ -15,13 +15,18 @@
                 </a>
             </header>
             <nav class="nav">
-                <div class="menu">
-                    <ul class="menu clrearfix">
-                        <li><a href="./html_exam02.html#About">About</a></li>
-                        <li><a href="./html_exam02.html#Skill">Skill</a></li>
-                        <li><a href="./html_exam02.html#Story">Story</a></li>
-                    </ul>
-                </div>
+                <ul class="tab clearfix">
+                    <li class='select'>About</li>
+                    <li>Skill</li>
+                    <li>Story</a></li>
+                </ul>
+                    <div class = "tab_contentbox">
+                        <ul class="tab_content">
+                            <li><a href="./html_exam02.html#About">Ishibashi Kosukeについて</a></li>
+                            <li class='hidden'><a href="./html_exam02.html#Skill">なぜprogrammingを学ぶのか</a></li>
+                            <li class='hidden'><a href="./html_exam02.html#Story">今後の展望について</a></li>
+                        </ul>
+                    </div>
             </nav>
             <img src="./image/TOP.jpg" class="top_image">
             <div class="wrapper clearfix">
@@ -74,16 +79,22 @@
                     </section>
                 </article>
                 <aside class="sidebar">
-                    <ul>
-                        <li><a href="./html_exam02.html#About">About</a></li>
-                        <li><a href="./html_exam02.html#Skill">Skill</a></li>
-                        <li><a href="./html_exam02.html#Story">Story</a></li>
-                    </ul>
+                    <dl>
+                        <dt>About</dt>
+                        <dd><a href="./html_exam02.html#About">Ishibashi Kosukeについて</a></dd>
+                        <dt>Skill</dt>
+                        <dd><a href="./html_exam02.html#Skill">なぜprogrammingを学ぶのか</a></dd>
+                        <dt>Story</dt>
+                        <dd><a href="./html_exam02.html#Story">今後の展望について</a></dd>
+                    </dl>
                 </aside>
             </div>
             <footer class="footer">
                 <p>by ishibashiku </p>
             </footer>
         </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+    </script>
     </body>
 </html>
