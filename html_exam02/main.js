@@ -1,14 +1,9 @@
 $(function(){
     $('.tab_contentbox').hide();
-    let num = 0;
-    $('.tab li').click(function(e){
-        // 最初のクリックのみ開く
-        if(num===0){
+    $('.tab').click(function(e){
         $('.tab_contentbox').slideToggle();
-        }
-        num += 1;
     });
-    $('.tab li').click(function(){
+    $('.tab li').mouseover(function(){
         // すべてのタブからselectクラスを取り除く
         $('.tab li').removeClass('select');
         // クリックされたタブに対してselectクラスを付与する

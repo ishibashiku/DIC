@@ -1,5 +1,4 @@
 /*共通のスタイル*/
-
 html {
   font-size: 62.5%;
   /*デフォルトが16pxなので10px標準とする*/
@@ -91,17 +90,33 @@ a{
     cursor: pointer;
 }
 
-.tab li:first-child{
+.tab li:nth-child(1){
     float: left;
     width: 23px;
     margin-left: 350px;
 }
 
-.tab li:last-child{
+.tab li:nth-child(3){
     float: left;
     width: 23px;
     margin-right: 20px;
 }
+
+/*#humberger {
+    display: inline-block;
+    margin: 4px 0 0 100px;
+    width: 30px;
+    font-size:0;
+}
+
+#humberger div {
+    display: inline-block;
+    height: 3px;
+    width: 24px;
+    background-color:#fff;
+    margin: 2px 6px;
+    border-radius: 2px;
+}*/
 
 .tab li:hover{
     color:#ff1313;
