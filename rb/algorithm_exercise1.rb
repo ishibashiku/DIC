@@ -9,5 +9,8 @@ def greatest_common_divisor(num1, num2)
     bignum = minnum
     minnum = quo_rem[1]
   end
+  # minnumを返却する
   minnum
 end
+
+p greatest_common_divisor(10, 58)
