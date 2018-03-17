@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- 以下のコードで読み込みを行う -->
+    <link rel="stylesheet" type="text/css" href="users.css">
+  </head>
+  <body>
+    <h1>新規登録</h1>
+    <% @params.each do |key, value|
+     messages = key.to_s + 'を入力してください' if value.empty? || key != 'captures'
+    %>
+    <%= message >
+    <%
+    end
+    %>
+    <form action="/users/confirm" method="POST">
+      <p>お名前: <input type="text" name="name" /></p>
+      <p>メールアドレス: <input type="text" name="email" /></p>
+      <p>パスワード: <input type="text" name="password" /></p>
+      <input type="submit" value="送信">
+    </form>
+    </body>
+</html>
